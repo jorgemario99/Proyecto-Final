@@ -14,7 +14,6 @@
 
 
 </head>
-
 <body>
     <!-- menu y logo -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light p-3 bg-light" id="menu">
@@ -22,9 +21,8 @@
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="logo" class="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,48 +57,144 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
-                    </li>
-
-
-                </ul>
-              
-                 <a href="https://wa.me/3105188168" target="_blank" class="btn btn-outline-dark" type="submit">Comprar</a>
-             
+                    </li>               
+                    
+                    
+                </ul>            
+                  
+                    <a href="https://wa.me/3137485936" class="btn btn-dark" target="_blank">Solicitar productos</a>
+                
             </div>
         </div>
     </nav>
-   
+    <!-- slider -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/slide1.jpg" class="d-block w-100" alt="T1">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/slide2.jpg" class="d-block w-100" alt="T2">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/slide3.jpg" class="d-block w-100" alt="T3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <!-- novedades o noticias -->
-    <div class="row row-cols-1 row-cols-md-3 g-4 p-5" id="contacto">
-        <h1 class="titulo">Contacto</h1>
-            <form class="row mx-auto g-4" action="#" method="post" id="formcontact">
-                <div class="col-md-6">
-                    <label for="inputNombre" class="form-label">Nombres</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombres" required>
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-5" id="noticias">
+        <h1 class="titulo">Noticias</h1>
+        <div class="col">        
+            <div class="card">
+                <img src="/img/noticias-dj.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">DJ</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary buy">Comprar</a>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputApellido" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="/img/noticas-celular-new.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Celular New</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary buy">Comprar</a>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" required>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="/img/noticias-pc-new.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Computadora</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary buy">Comprar</a>
                 </div>
-                <div class="col-md-12">
-                   <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control"></textarea>
-                </div>
-                
-                
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                    <button type="reset" class="btn btn-primary">Cancelar</button>
-                </div>
-            </form>
-            <a href="mailto:aprendesoftware@poliandino.edu.co" id="recepcion"></a>
+            </div>
+        </div>
 
     </div>
 
-    
+    <!-- servicios -->
+    <section class="w-100">
+        <div class="row w-75 mx-auto" id="servicios-fila-1">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="/img/desarrollo.png" alt="Desarrollo" class="services">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Desarrollo</h3>
+                    <p class="px-4">
+                        Desarrollo web, apliciaciones moviles
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="/img/concepto.png" alt="Concepto Diseño" class="services">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Concepto Diseño</h3>
+                    <p class="px-4">
+                        Diseño, Implementación y concepto
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="/img/comunicaciones.png" alt="Concepto Diseño" class="services">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Concepto Diseño</h3>
+                    <p class="px-4">
+                        Diseño, Implementación y concepto
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="/img/comunicaciones.png" alt="Concepto Diseño" class="services">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Concepto Diseño</h3>
+                    <p class="px-4">
+                        Diseño, Implementación y concepto
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="/img/comunicaciones.png" alt="Concepto Diseño" class="services">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Concepto Diseño</h3>
+                    <p class="px-4">
+                        Diseño, Implementación y concepto
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="/img/comunicaciones.png" alt="Concepto Diseño" class="services">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Concepto Diseño</h3>
+                    <p class="px-4">
+                        Diseño, Implementación y concepto
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
 
     <!-- footer con metodologia BEM-->
     <footer id="page-footer">
@@ -108,7 +202,7 @@
             <div class="footer__cta-ftcontainer">
                 <h2 class="cta__txt">¿Preguntas?, Estamos aquí para ayudar</h2>
                 <div class="cta__ftrow">
-                    <a href="https://wa.me/3105188168" class="cta__btn" target="_blank">
+                    <a href="https://wa.me/3137485936" class="cta__btn" target="_blank">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -120,7 +214,7 @@
                     <img src="img/logo.png" alt="" class="footer__logo" width="200">
                 </figure>
                 <p class="ft-social-row">
-                    <a href="https://wa.me/3105188168" class="ft-social" target="_blank">
+                    <a href="https://wa.me/3137485936" class="ft-social" target="_blank">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                     <a href="https://www.facebook.com/" class="ft-social" target="_blank">
@@ -163,17 +257,17 @@
                 <h4 class="footer__title">Contactos</h4>
                 <p class="footer__info">
                     <i class="fas fa-envelope"></i>
-                    Email: aprendesoftware@poliandino.edu.co
+                    Email: jorgemarioholguinsantander@gmail.com
                 </p>
 
                 <p class="footer__info">
                     <i class="fas fa-phone"></i>
-                    Teléfono: 6043112325
+                    Teléfono: 6042254598
                 </p>
 
                 <p class="footer__info">
                     <i class="fas fa-map-marker-alt"></i>
-                    Dirección: Carrera 52 N 85-20
+                    Dirección: Calle 57B # 16D69
                 </p>
             </div>
         </div>
@@ -189,8 +283,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-        <!-- referenciar el js para enviar correos -->
-        <script src="js/enviocontacto.js"></script>
 </body>
-
 </html>
